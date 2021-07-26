@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Follow Spirals</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicons/aerondight.ico">
+
+    <!-- Bootstrap and Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d22269cf73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Title Section -->
+    <header>
+        <h1>Follow Spirals</h1>
+        <p>N particles are present at the vertices of a regular n-gon. At time t = 0, each particle follows it's k-th neighbor with a certain
+            constant speed. This continues until all of them collapse at the center of the polygon. The additional
+            parameter circumradius effectively controls the size of the polygon. Click Animate! to see the beautiful spirals made by such a simple process!
+        </p>
+    </header>
+
+    <!-- Parameter Section -->
+    <section>
+        <div class="top-parameter parameters mb-3 row">
+            <label for="sideCount" class="col-sm-4 col-form-label">Number of Sides</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="n" value="5" id="sideCount">
+            </div>
+        </div>
+
+        <div class="parameters mb-3 row">
+            <label for="rank" class="col-sm-4 col-form-label">Rank of Target</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="k" value="1" id="rank">
+            </div>
+        </div>
+
+        <div class="parameters mb-3 row">
+            <label for="radius" class="col-sm-4 col-form-label">Circumradius</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="r" value="240" id="radius">
+            </div>
+        </div>
+
+        <div class="parameters mb-3 row">
+            <label for="speed" class="col-sm-4 col-form-label">Speed</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" name="maxSpeed" value="0.2" id="speed">
+            </div>
+        </div>
+
+        <button class="go-btn btn btn-lg btn-dark" type="submit" name="button">Animate!</button>
+    </section>
+
+    <!-- Canvas - The Crème de la Crème -->
+    <canvas id="onscreen"></canvas>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div>
+            <i class="fab fa-twitter social-media"></i> <i class="fab fa-facebook social-media"></i> <i class="fab fa-instagram social-media"></i> <i class="fas fa-envelope social-media"></i>
+        </div>
+        <p>© Copyright 2021 Aerondight</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="libraries/vector.js"></script>
+    <script src="libraries/particle.js"></script>
+    <script src="libraries/spindle.js"></script>
+    <script src="canvas.js"></script>
+</body>
+
+</html>
