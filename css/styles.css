@@ -1,0 +1,58 @@
+/* Tag CSSes */
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Spectral";
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: auto;
+    width: 75%;
+}
+
+/* Middle Section */
+#onscreen {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #fcf6f5;
+    border-radius: 25px;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 270px;
+    right: 12.5%;
+    margin-bottom: 100px;
+}
+
+.go-btn {
+    margin: 3% 18%;
+}
+
+.parameters {
+    font-size: 1.2rem;
+    margin-left: 12.5%;
+    text-align: left;
+    width: 40%;
+}
+
+.top-parameter {
+    margin-top: 150px;
+}
+
+
+/* Footer Section */
+#footer {
+    text-align: center;
+    margin: 220px auto 50px;
+}
+
+#footer p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
